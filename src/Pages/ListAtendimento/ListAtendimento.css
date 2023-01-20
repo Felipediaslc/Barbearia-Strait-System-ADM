@@ -1,10 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
-}
+
 
 .caixa h1 {
   display: flex;
@@ -16,13 +11,14 @@
   padding: 1rem 0 1rem 0;
   border-top-right-radius: 1rem;
   border-top-left-radius: 1rem;
+  font-family: "Montserrat", sans-serif;
 }
 
 .caixa {
   position: absolute;
   width: 77vw;
   height: 30vh;
-
+  font-family: "Montserrat", sans-serif;
   background-color: transparent;
   color: #fff;
   margin: 1rem 20rem 5rem 18rem;
@@ -30,7 +26,7 @@
 
 table {
   border-collapse: collapse;
-
+  font-family: "Montserrat", sans-serif;
   width: 77vw;
 }
 tr:hover {
@@ -42,6 +38,7 @@ td {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   color: #6c7293;
   font-weight: bold;
+  font-family: "Montserrat", sans-serif;
 }
 
 th {
@@ -50,4 +47,5 @@ th {
   padding: 0.7rem 4rem 0.7rem 3rem;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  font-family: "Montserrat", sans-serif;
 }

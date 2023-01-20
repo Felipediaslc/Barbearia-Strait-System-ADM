@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import { Routes, Route } from "react-router-dom";
 
 
@@ -12,11 +12,11 @@ import Caixa from "./Pages/Caixa/Caixa";
 import LoginAdm from "./Pages/LoginAdm/LoginAdm";
 
 
-// eslint-disable-next-line import/no-anonymous-default-export
+
 export default () => {
   return (
     
-      <Fragment>
+      <>
         <Routes>
           <Route path="/" element={<LoginAdm />} />
           <Route path="/listarusuarios" element={<ListarUsuarios />} />
@@ -28,7 +28,7 @@ export default () => {
           <Route path="/caixafinancas" element={<Caixa />} />
           
         </Routes>
-      </Fragment>
+      </>
    
   );
 };
