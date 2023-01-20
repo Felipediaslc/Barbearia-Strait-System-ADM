@@ -3,8 +3,9 @@
 .modal01 {
   top: 0;
   left: 0;
+
   width: 100vw;
-  height: 110vh;
+  height: 113vh;
   display: flex;
   z-index: 100000;
   background: #000000;
@@ -18,9 +19,9 @@
 .modal01-content {
   color: white;
   margin: 0 auto;
-  margin-top: 4rem;
+  margin-top: 1rem;
   width: 30vw;
-  height: 82vh;
+  
 
   padding: 0;
   border: 2px solid transparent;
@@ -38,9 +39,9 @@
   justify-content: center;
   align-items: flex-start;
   background: #191c24;
-  height: 75vh;
+  height: 70vh;
   border-radius: 1rem;
-  margin-top: 1rem;
+  margin-top: -7rem;
 }
 .modal01-body p {
   margin-top: 3rem;
@@ -62,7 +63,7 @@
 }
 
 .nome01 input {
-  width: 24vw;
+  width: 20vw;
   height: 6vh;
   padding: 0.4em 2rem 0.1rem 1.5rem;
   border: none;
@@ -97,7 +98,7 @@
   float: left;
 }
 .senha03 input {
-  width: 24vw;
+  width: 20vw;
   height: 6vh;
   padding: 0.4em 2rem 0.1rem 1.5rem;
   font-size: 1.2rem;
@@ -141,7 +142,7 @@
   border-radius: 2rem;
   letter-spacing: 0.1rem;
   margin-top: 22rem;
-  margin-left: -1.5rem;
+  margin-left: 1.8rem;
 }
 
 .button-admlog:hover {
