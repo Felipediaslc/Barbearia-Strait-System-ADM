@@ -29,7 +29,7 @@ const CadastroFuncion = ({ id = "funcion", onClose = () => {}, children }) => {
       cidade: cidade,
     };
     const getFun = await axios.post(
-      "http://localhost:3001/funcionarios",
+      "https://strait-back-integrador.herokuapp.com/funcionarios",
       funcionario
     );
     console.log(getFun);
@@ -135,11 +135,7 @@ const CadastroFuncion = ({ id = "funcion", onClose = () => {}, children }) => {
               required
             />
           </div>
-          {/*
- 
-
-<UIButton >Cadastrar</UIButton>
-*/}
+   
           <button
             className="button-funcionlog"
             onClick={(e) => cadastrarFuncionario(e)}

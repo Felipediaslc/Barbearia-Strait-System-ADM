@@ -15,7 +15,7 @@ const ConfigConta = () => {
  }, []);
 
  const recuperarConta = async () => {
-   const users = await axios.get("http://localhost:3001/adms");
+   const users = await axios.get("https://strait-back-integrador.herokuapp.com/adms");
   
 
    setAdmins(users.data);

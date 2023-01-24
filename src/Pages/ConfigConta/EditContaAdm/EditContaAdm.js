@@ -21,7 +21,7 @@ const EditContaAdm = ( ) => {
       }, [])
     
       const buscarAdministrador = async () => {
-          const retorno = await axios.get(`http://localhost:3001/adms/${id}`)
+          const retorno = await axios.get(`https://strait-back-integrador.herokuapp.com/adms/${id}`)
           setNomeEmpres(retorno.data.nomeEmpres)
           setTelefone(retorno.data.Telefone)
           setRuaAv(retorno.data.ruaAv)
@@ -44,7 +44,7 @@ const EditContaAdm = ( ) => {
             cidade: Cidade,
             senhaAdm:senhaAdm
           }
-          const resposta = await axios.put(`http://localhost:3001/adms/${id}`, adm)
+          const resposta = await axios.put(`https://strait-back-integrador.herokuapp.com/adms/${id}`, adm)
           if (resposta.status === 200) {
               navigate("/");
           }

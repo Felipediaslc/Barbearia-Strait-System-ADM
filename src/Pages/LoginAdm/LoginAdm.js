@@ -20,7 +20,7 @@ const LoginAdm = () => {
      
     }
 
-  const response = await axios.post('http://localhost:3001/adms/login', {email, senhaAdm});
+  const response = await axios.post('https://strait-back-integrador.herokuapp.com/adms/login', {email, senhaAdm});
    if(response.data && response.status === 200){
     localStorage.setItem('user',  JSON.stringify(response.data));
      navigate("/listusuarios");

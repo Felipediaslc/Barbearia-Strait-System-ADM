@@ -10,7 +10,7 @@ const ListarFuncionarios = () => {
       }, []) 
     
 const recuperarFuncionarios = async () => {
-    const funcio = await axios.get('http://localhost:3001/funcionarios')
+    const funcio = await axios.get('https://strait-back-integrador.herokuapp.com/funcionarios')
   
     setFuncionarios(funcio.data)
   }

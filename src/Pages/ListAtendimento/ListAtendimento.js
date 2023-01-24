@@ -10,7 +10,7 @@ const ListAtendimento = () => {
   }, []);
 
   const recuperarUsuarios = async () => {
-    const users = await axios.get("http://localhost:3001/usuarios");
+    const users = await axios.get("https://strait-back-integrador.herokuapp.com/usuarios");
     console.log(users.data);
     setUsuarios(users.data);
   };

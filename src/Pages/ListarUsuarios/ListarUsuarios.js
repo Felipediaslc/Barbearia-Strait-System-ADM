@@ -9,7 +9,7 @@ const ListarUsuarios = () => {
   }, []);
 
   const recuperarUsuarios = async () => {
-    const users = await fetch("http://localhost:3001/usuarios");
+    const users = await fetch("https://strait-back-integrador.herokuapp.com/usuarios");
     const data = await users.json();
 
     setUsuarios(data);
