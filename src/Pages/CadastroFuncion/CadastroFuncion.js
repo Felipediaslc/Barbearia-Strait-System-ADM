@@ -53,7 +53,7 @@ const CadastroFuncion = ({ id = "funcion", onClose = () => {}, children }) => {
       <div className="fucion-content">
         <div className="funcion-body">
           <p>Cadastrar Funcionário</p>
-          <div className="nome">
+          <div className="nome-fun">
             <input
               type="text"
               name="nomeCompleto"
@@ -63,7 +63,7 @@ const CadastroFuncion = ({ id = "funcion", onClose = () => {}, children }) => {
               required
             />
           </div>
-          <div className="celular">
+           <div className="celular-fun">
             <input
               type="tel"
               name="telefone"
@@ -73,7 +73,7 @@ const CadastroFuncion = ({ id = "funcion", onClose = () => {}, children }) => {
               required
             />
           </div>
-          <div className="cpf">
+          <div className="cpf-fun">
             <input
               type="text"
               name="cpfFun"
@@ -84,7 +84,7 @@ const CadastroFuncion = ({ id = "funcion", onClose = () => {}, children }) => {
             />
           </div>
 
-          <div className="av-rua">
+          <div className="av-rua-fun">
             <input
               type="text"
               name="av-rua"
@@ -95,7 +95,7 @@ const CadastroFuncion = ({ id = "funcion", onClose = () => {}, children }) => {
             />
           </div>
 
-          <div className="nun-end">
+          <div className="nun-end-fun">
             <input
               type="text"
               name="numero"
@@ -105,7 +105,7 @@ const CadastroFuncion = ({ id = "funcion", onClose = () => {}, children }) => {
               required
             />
           </div>
-          <div className="complemento">
+          <div className="complemento-fun">
             <input
               type="text"
               name="complemento"
@@ -115,7 +115,7 @@ const CadastroFuncion = ({ id = "funcion", onClose = () => {}, children }) => {
               required
             />
           </div>
-          <div className="bairro">
+          <div className="bairro-fun">
             <input
               type="text"
               name="bairro"
@@ -125,7 +125,7 @@ const CadastroFuncion = ({ id = "funcion", onClose = () => {}, children }) => {
               required
             />
           </div>
-          <div className="cidade">
+          <div className="cidade-fun">
             <input
               type="text"
               name="cidade"
@@ -134,7 +134,7 @@ const CadastroFuncion = ({ id = "funcion", onClose = () => {}, children }) => {
               onChange={(event) => setCidade(event.target.value)}
               required
             />
-          </div>
+          </div> 
    
           <button
             className="button-funcionlog"

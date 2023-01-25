@@ -18,7 +18,6 @@
   height: 70vh;
   background-color: #191c24;
   padding: 0;
-
   border-radius: 1rem;
   z-index: 20;
 }
@@ -41,260 +40,244 @@
   z-index: 10;
 }
 
-.nome {
+.nome-fun {
   position: absolute;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  width: 30vw;
   height: 0vh;
-  margin-top: 3rem;
+  margin-top: 4.2rem;
   padding: 2.6rem 2rem;
   z-index: 2;
 }
-.nome input {
-  width: 30vw;
-  height: 6vh;
+.nome-fun input {
+  width: 21vw;
+  height: 4vh;
   border-radius: 25rem;
   background-color: #0f1015;
   border-bottom: 1px solid #6c7293;
   padding: 0.4em 2rem 0.1rem 1.5rem;
-
   color: #fff;
   letter-spacing: 0.1rem;
   outline: none;
   text-align: center;
-
   font-family: "Montserrat", sans-serif;
 }
 
-.nome input::placeholder {
+.nome-fun input::placeholder {
   color: #fff;
-
   text-align: center;
-  font-size: 1.3em;
+  font-size: 1.1em;
 }
 
-.celular {
+.celular-fun {
   position: absolute;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-top: 8.5rem;
-  width: 25vw;
+  margin-top: 9.3rem;
+  margin-left: -11rem;
   height: 0vh;
   z-index: 1;
   float: left;
 }
 
-.celular input {
-  width: 12.4vw;
-  height: 6vh;
+.celular-fun input {
+  width: 8.4vw;
+  height: 4vh;
   text-align: center;
   padding: 0.4em 2rem 0.1rem 1.5rem;
   background-color: #0f1015;
   border-bottom: 1px solid #6c7293;
-
   color: #fff;
   letter-spacing: 0.1rem;
   outline: none;
   border-radius: 25rem;
   font-family: "Montserrat", sans-serif;
 }
-.celular input::placeholder {
-  margin-top: 0.3rem;
+.celular-fun input::placeholder {
   color: #fff;
-
   text-align: center;
   font-size: 1.1rem;
 }
 
-.cpf {
+.cpf-fun {
   position: absolute;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin-top: 8.5rem;
-  width: 25.6vw;
+  margin-top: 9.3rem;
+  margin-left: 11.2rem;
   height: 0vh;
   z-index: 1;
   float: right;
 }
 
-.cpf input {
-  width: 12.4vw;
-  height: 6vh;
+.cpf-fun input {
+  width: 8.4vw;
+  height: 4vh;
   padding: 0.4em 2rem 0.1rem 1.5rem;
   text-align: center;
   background-color: #0f1015;
   border-bottom: 1px solid #6c7293;
   letter-spacing: 0.1rem;
   color: #fff;
-
   outline: none;
   border-radius: 25rem;
   font-family: "Montserrat", sans-serif;
 }
-.cpf input::placeholder {
+.cpf-fun input::placeholder {
   color: #fff;
-
   font-size: 1.1rem;
 }
 
-.av-rua {
+.av-rua-fun {
   position: absolute;
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  width: 30vw;
+  margin-left: 0.1rem;
   height: 0vh;
-  margin-top: 9.9rem;
+  margin-top: 10.3rem;
   padding: 2.6rem 2rem;
 }
-.av-rua input {
-  width: 30vw;
-  height: 6vh;
+.av-rua-fun input {
+  width: 21.3vw;
+  height: 4vh;
   padding: 0.4em 2rem 0.1rem 1.5rem;
   background-color: #0f1015;
   border-bottom: 1px solid #6c7293;
   letter-spacing: 0.1rem;
   color: #fff;
-
   outline: none;
   border-radius: 25rem;
   font-family: "Montserrat", sans-serif;
 }
-.av-rua input::placeholder {
+.av-rua-fun input::placeholder {
   color: #fff;
-
   font-size: 1.1rem;
   padding: 0 -3rem;
 }
 
-.nun-end {
+.nun-end-fun {
   position: absolute;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-top: 14rem;
-  width: 25vw;
+  margin-top: 14.3rem;
+  margin-left: -16.9rem;
   height: 0vh;
   z-index: 1;
   float: left;
 }
 
-.nun-end input {
-  width: 12.4vw;
-  height: 6vh;
+.nun-end-fun input {
+  width: 3vw;
+  height: 4vh;
   text-align: center;
-  padding: 0.4em 7.5rem 0.1rem 1rem;
+  padding: 0.4em 1rem 0.1rem 1rem;
   background-color: #0f1015;
   border-bottom: 1px solid #6c7293;
-
   color: #fff;
   letter-spacing: 0.1rem;
   outline: none;
   border-radius: 25rem;
   font-family: "Montserrat", sans-serif;
 }
-.nun-end input::placeholder {
-  margin-top: 0.3rem;
+.nun-end-fun input::placeholder {
+  margin-top: 0.2rem;
   color: #fff;
-
   font-size: 1rem;
 }
 
-.complemento {
+.complemento-fun {
   position: absolute;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin-top: 14rem;
-  width: 25.6vw;
+  margin-top: 14.3rem;
+  margin-left: 5.1rem;
   height: 0vh;
   z-index: 1;
   float: right;
 }
 
-.complemento input {
-  width: 12.4vw;
-  height: 6vh;
-  padding: 0.4em 1rem 0.1rem 0.8rem;
-
+.complemento-fun input {
+  width: 12.9vw;
+  height: 4vh;
+  padding: 0.4em 5rem 0.1rem 0.8rem;
   background-color: #0f1015;
   border-bottom: 1px solid #6c7293;
   letter-spacing: 0.1rem;
   color: #fff;
-
   outline: none;
   border-radius: 25rem;
   font-family: "Montserrat", sans-serif;
 }
-.complemento input::placeholder {
+.complemento-fun input::placeholder {
   color: #fff;
   font-size: 0.9rem;
+  margin-top: 0.2rem;
 }
 
-.bairro {
+.bairro-fun {
   position: absolute;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   margin-top: 16.8rem;
-  width: 25vw;
+  margin-left: -11rem;
   height: 0vh;
   z-index: 1;
   float: left;
 }
 
-.bairro input {
-  width: 12.4vw;
-  height: 6vh;
+.bairro-fun input {
+  width: 4.3vw;
+  height: 4vh;
   text-align: center;
   padding: 0.4em 5.7rem 0.1rem 1rem;
   background-color: #0f1015;
   border-bottom: 1px solid #6c7293;
-
+  z-index: 1;
   color: #fff;
   letter-spacing: 0.1rem;
   outline: none;
   border-radius: 25rem;
   font-family: "Montserrat", sans-serif;
 }
-.bairro input::placeholder {
+.bairro-fun input::placeholder {
   margin-top: 0.3rem;
   color: #fff;
-
+  z-index: 1;
   font-size: 1rem;
 }
 
-.cidade {
+.cidade-fun {
   position: absolute;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   margin-top: 16.8rem;
-  width: 25.6vw;
+  margin-left: 11.1rem;
   height: 0vh;
   z-index: 1;
   float: right;
 }
 
-.cidade input {
-  width: 12.4vw;
-  height: 6vh;
-  padding: 0.4em 1rem 0.1rem 0.8rem;
-
+.cidade-fun input {
+  width: 4.7vw;
+  height: 4vh;
+  padding: 0.4em 5.9rem 0.1rem 1rem;
   background-color: #0f1015;
   border-bottom: 1px solid #6c7293;
   letter-spacing: 0.1rem;
   color: #fff;
-
   outline: none;
   border-radius: 25rem;
   font-family: "Montserrat", sans-serif;
 }
-.cidade input::placeholder {
+.cidade-fun input::placeholder {
   color: #fff;
   font-size: 0.9rem;
 }
@@ -304,11 +287,11 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  height: 5vh;
-  width: 10vw;
+  height:6vh;
+  width: 25vw;
   font-family: "Rubik", sans-serif;
   background-color: #ed8c1a;
-  padding: 0.1rem 2rem 0.3rem 2rem;
+  padding: 0.1rem 2rem 0.5rem 2rem;
   border: none;
   cursor: pointer;
   transition: background 0.3s;
@@ -317,8 +300,8 @@
   font-size: 1rem;
   border-radius: 2rem;
   letter-spacing: 0.1rem;
-  margin-top: 22rem;
-  margin-left: -0.3rem;
+  margin-top: 20.5rem;
+  margin-left: 0.7rem;
 }
 
 .button-funcionlog:hover {

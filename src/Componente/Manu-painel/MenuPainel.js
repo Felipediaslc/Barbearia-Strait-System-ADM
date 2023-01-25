@@ -22,7 +22,7 @@ const MenuPainel = ({  onLogout }) => {
               </a>
             </li>
             <li>
-              <Link to><i className="fa fa-sign-out" aria-hidden="true"></i>Sair</Link>
+              <Link to="/"><i className="fa fa-sign-out" aria-hidden="true"></i>Sair</Link>
             </li>
           </ul>
         </button>

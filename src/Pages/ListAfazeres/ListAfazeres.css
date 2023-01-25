@@ -66,10 +66,10 @@ button {
 }
 
 .content {
-  width: 90vw;
+  width: 81vw;
   max-width: 1030px;
-  background-color: #000000;
-  margin: -28rem -6.5rem;
+  background-color: transparent;
+  margin: -28rem -8.2rem;
   border-radius: 5px;
   padding: 1rem;
 }
@@ -85,6 +85,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  
   border: 1px solid #6c7293;
   background-color: #191c24;
   padding: 5px 10px;
