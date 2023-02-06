@@ -1,31 +1,29 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import axios from 'axios';
-
+import axios from "axios";
 
 import "./LoginAdm.css";
 
-
 const LoginAdm = () => {
- 
-  
   const [email, setEmail] = useState("");
   const [senhaAdm, setSenhaAdm] = useState("");
   const navigate = useNavigate();
-  
 
   const handleLogin = async () => {
     if (!email && !senhaAdm) {
-     console.log("por favor preencha correto")
-     
+      console.log("por favor preencha correto");
     }
 
-  const response = await axios.post('https://strait-back-integrador.herokuapp.com/adms/login', {email, senhaAdm});
-   if(response.data && response.status === 200){
-    localStorage.setItem('user',  JSON.stringify(response.data));
-     navigate("/listusuarios");
-   }
-
+    const response = await axios.post(
+      "https://strait-back-integrador.herokuapp.com/adms/login",
+      { email, senhaAdm }
+    );
+    if (response.data && response.status === 200) {
+    localStorage.setItem("user", JSON.stringify(response.data));
+     
+   
+      navigate("/listusuarios");
+    }
   };
 
   return (
@@ -41,11 +39,10 @@ const LoginAdm = () => {
               placeholder="Digite seu E-mail"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              
             />
           </div>
-          <div className="senha03">-
-            <i className="input-icon uil uil-lock-alt"></i>
+          <div className="senha03">
+            -<i className="input-icon uil uil-lock-alt"></i>
             <input
               placeholder="Digite sua Senha"
               type="password"
@@ -53,7 +50,7 @@ const LoginAdm = () => {
               onChange={(e) => setSenhaAdm(e.target.value)}
             />
           </div>
-          
+
           <button type="button" className="button-admlog" onClick={handleLogin}>
             Entrar
           </button>

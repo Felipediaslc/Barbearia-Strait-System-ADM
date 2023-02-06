@@ -14,7 +14,7 @@
   align-items: center;
   background: #191c24;
   width: 77.5vw;
-  height: 69vh;
+  height: 67vh;
   margin-top: 4rem;
   margin-left: 35rem;
 
@@ -64,37 +64,82 @@
 .edit-user #nom {
   position: absolute;
   color: #6c7293;
-  margin: -13rem 16.5rem 0 0;
+  margin: -11rem 16.5rem 0 0;
+}
+.edit-user .nom-cont {
+  position: absolute;
+  color: #fff;
+  margin: -11rem 1.3rem 0 0;
+}
+.edit-user #email {
+  position: absolute;
+  color: #6c7293;
+  margin: -6.5rem 22rem 0 0;
+}
+.edit-user .email-cont {
+  position: absolute;
+  color: #fff;
+  margin: -6.5rem 7.5rem 0 0;
 }
 .edit-user #tel {
   position: absolute;
   color: #6c7293;
-  margin: -8.3rem 21rem 0 0;
+  margin: -1.5rem 21rem 0 0;
+}
+.edit-user .tel-cont {
+  position: absolute;
+  color: #fff;
+  margin: -1.5rem 9.5rem 0 0;
 }
 .edit-user #end {
   position: absolute;
   color: #6c7293;
-  margin: -4rem 20.5rem 0 0;
+  margin: 3rem 20.5rem 0 0;
+}
+.edit-user .end-cont {
+  position: absolute;
+  color: #fff;
+  margin: 3rem 5rem 0 0;
 }
 .edit-user #num {
   position: absolute;
   color: #6c7293;
-  margin: 0.5rem 23.5rem 0 0;
+  margin: 7rem 23.5rem 0 0;
+}
+.edit-user .num-cont {
+  position: absolute;
+  color: #fff;
+  margin:7rem 20rem 0 0;
 }
 .edit-user #comp {
   position: absolute;
   color: #6c7293;
-  margin: 0.5rem 1rem 0 10rem;
+  margin: 7rem 1rem 0 10rem;
+}
+.edit-user .comp-cont {
+  position: absolute;
+  color: #fff;
+  margin: 7rem -10rem 0 10rem;
 }
 .edit-user #bair {
   position: absolute;
   color: #6c7293;
-  margin: 5rem 22.2rem 0 0;
+  margin: 11rem 22.2rem 0 0;
+}
+.edit-user .bair-cont {
+  position: absolute;
+  color: #fff;
+  margin: 11rem 14.3rem 0 0;
 }
 .edit-user #cid {
   position: absolute;
   color: #6c7293;
-  margin: 9.8rem 21.5rem 0 0;
+  margin: 15rem 21.5rem 0 0;
+}
+.edit-user .cid-cont {
+  position: absolute;
+  color: #fff;
+  margin: 15rem 13.5rem 0 0;
 }
 
 .edit-senha {

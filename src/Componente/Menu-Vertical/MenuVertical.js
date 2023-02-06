@@ -1,8 +1,17 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./MenuVertical.css";
 
 const MenuVertical = () => {
+  const [items, setItems] = useState([]);
+
+  useEffect(() => {
+    const items = JSON.parse(localStorage.getItem('user'));
+    if (items) {
+     setItems(items);
+    
+    }
+   }, []);
   return (
     <div className="painel-nav">
       <div className="container-drop2">
@@ -25,7 +34,7 @@ const MenuVertical = () => {
           </ul>
         </button>
       </div>
-      <h3>DiasCode.ltda</h3>
+      <h3>{items.nomeEmpres}</h3>
       <p className="sub-title">Empresa</p>
       <h4>Navegação</h4>
       <div className="naveg">

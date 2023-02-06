@@ -2,37 +2,33 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 
-import "./ConfigConta.css";
+import "./ConfigConta.css"
 
 const ConfigConta = () => {
   
   
  
  const [admins, setAdmins] = useState([]);
+ const [items, setItems] = useState([]);
+ 
 
  useEffect(() => {
-   recuperarConta();
+  const items = JSON.parse(localStorage.getItem('user'));
+  if (items) {
+   setItems(items);
+  
+  }
+   deletarConta();
+  
  }, []);
 
- const recuperarConta = async () => {
-   const users = await axios.get("https://strait-back-integrador.herokuapp.com/adms");
+ const deletarConta = async () => {
+   const users = await axios.delete(`https://strait-back-integrador.herokuapp.com/adms/${items.id}`);
   
-
+  
    setAdmins(users.data);
  };
-  const preencherPerfil = () => {
-    return admins.map((ad)=>(
-      <div className="preenche-empres" >
-        <div id="preenche-nomes">{ad.nomeEmpres}</div>
-        <div id="preenche-tel">{ad.telefone}</div>
-        <div id="preenche-end">{ad.ruaAv}</div>
-        <div id="preenche-num">{ad.numEnd}</div>
-        <div id="preenche-complement">{ad.complemento}</div>
-        <div id="preenche-bairro">{ad.bairro}</div>
-        <div id="preenche-cid">{ad.cidade}</div>
-      </div>
-    ))
-  };
+
 
   return (
     <div className="body-configconta">
@@ -43,22 +39,18 @@ const ConfigConta = () => {
           <p id="alterar-perfil">
             <Link to="/edit">Editar</Link>
           </p>
-          {admins.length > 0 ? (
+          
             <>
-              <label id="nom">Nome Empresarial:</label>
-              <label id="tel">Telefone:</label>
-              <label id="end">Endereço:</label>
-              <label id="num">Nº:</label>
-              <label id="comp">Complemento:</label>
-              <label id="bair">Bairro:</label>
-              <label id="cid">Cidade:</label>
-              <label>
-                {preencherPerfil()}
-                </label>
+              <label id="nom">Nome Empresarial:</label><span className="nom-cont">{items.nomeEmpres}</span>
+              <label id="email">E-mail:</label><span className="email-cont">{items.email}</span>
+              <label id="tel">Telefone:</label><span className="tel-cont">{items.telefone}</span>
+              <label id="end">Endereço:</label><span className="end-cont">{items.ruaAv}</span>
+              <label id="num">Nº:</label><span className="num-cont">{items.numEnd}</span>
+              <label id="comp">Complemento:</label><span className="comp-cont">{items.complemento}</span>
+              <label id="bair">Bairro:</label><span className="bair-cont">{items.bairro}</span>
+              <label id="cid">Cidade:</label><span className="cid-cont">{items.cidade}</span>
             </>
-          ) : (
-            "Carregando perfil..."
-          )}
+      
         </div>
 
         <div className="edit-senha">
@@ -72,7 +64,7 @@ const ConfigConta = () => {
 
           <span>Deletar Conta</span>
           <div className="button-delet-adm">
-            <button>Deletar conta Adm</button>
+            <button onClick={deletarConta}>Deletar conta Adm</button>
           </div>
         </div>
       </div>

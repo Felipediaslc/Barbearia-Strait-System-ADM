@@ -26,6 +26,7 @@ export default () => {
           <Route path="/configconta" element={<ConfigConta />} />
           <Route path="/listafazeres" element={<ListAfazeres />} />
           <Route path="/caixafinancas" element={<Caixa />} />
+        
           
         </Routes>
       </>
